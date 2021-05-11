@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B4AF031C-B137-43D9-92A2-6E9EE76AF0A8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DealOrNoDeal</RootNamespace>
+    <AssemblyName>DealOrNoDeal</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Box.cs" />
+    <Compile Include="EarlyExit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EarlyExit.Designer.cs">
+      <DependentUpon>EarlyExit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputName.Designer.cs">
+      <DependentUpon>InputName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Play.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Play.Designer.cs">
+      <DependentUpon>Play.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Results.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Results.Designer.cs">
+      <DependentUpon>Results.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaveGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaveGame.Designer.cs">
+      <DependentUpon>SaveGame.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EarlyExit.resx">
+      <DependentUpon>EarlyExit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputName.resx">
+      <DependentUpon>InputName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Play.resx">
+      <DependentUpon>Play.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Results.resx">
+      <DependentUpon>Results.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaveGame.resx">
+      <DependentUpon>SaveGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closed_briefcase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\opened_no_bg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase_no_background1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageonline-co-whitebackgroundremoved %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mypicture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bulgarianmoney.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
